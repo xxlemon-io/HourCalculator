@@ -1,5 +1,5 @@
 {
-    "name": "hour-calculator",
+    "name": "hourcalculator",
     "compatibility_date": "2024-12-19",
     "assets": {
         "directory": "./dist",
