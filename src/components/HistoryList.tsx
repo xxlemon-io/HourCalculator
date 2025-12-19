@@ -41,7 +41,9 @@ export const HistoryList = ({ history, onClear, onUndo }: HistoryListProps) => {
                             className="bg-card/50 border border-border/50 p-3 rounded-xl flex items-center justify-between group"
                         >
                             <div className="flex items-center gap-3">
-                                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${item.operation === 'add' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${item.operation === 'add'
+                                    ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
+                                    : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
                                     }`}>
                                     {item.operation === 'add' ? '+' : '-'}
                                 </span>
