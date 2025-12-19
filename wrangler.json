@@ -1,0 +1,11 @@
+{
+    "name": "hour-calculator",
+    "compatibility_date": "2024-12-19",
+    "assets": {
+        "directory": "./dist",
+        "binding": "ASSETS"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
