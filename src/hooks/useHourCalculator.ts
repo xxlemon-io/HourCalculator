@@ -18,7 +18,15 @@ export type ConversionResult = {
 };
 
 export const useHourCalculator = () => {
-    const [currentSeconds, setCurrentSeconds] = useState(0);
+    const [currentSeconds, setCurrentSeconds] = useState(() => {
+        try {
+            const saved = localStorage.getItem('hour-calculator-current-seconds');
+            return saved ? parseInt(saved, 10) : 0;
+        } catch {
+            return 0;
+        }
+    });
+
     const [history, setHistory] = useState<TimeRecord[]>(() => {
         try {
             const saved = localStorage.getItem('hour-calculator-history');
@@ -29,8 +37,9 @@ export const useHourCalculator = () => {
     });
 
     useEffect(() => {
+        localStorage.setItem('hour-calculator-current-seconds', currentSeconds.toString());
         localStorage.setItem('hour-calculator-history', JSON.stringify(history));
-    }, [history]);
+    }, [currentSeconds, history]);
 
     const calculate = (hours: number, minutes: number, operation: 'add' | 'subtract') => {
         const inputSeconds = (hours * 3600) + (minutes * 60);
