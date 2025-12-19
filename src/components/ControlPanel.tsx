@@ -35,6 +35,8 @@ export const ControlPanel = ({ onCalculate }: ControlPanelProps) => {
                     <div className="relative">
                         <input
                             type="number"
+                            inputMode="numeric"
+                            pattern="[0-9]*"
                             value={hours}
                             onChange={(e) => setHours(e.target.value)}
                             placeholder="0"
@@ -48,6 +50,8 @@ export const ControlPanel = ({ onCalculate }: ControlPanelProps) => {
                     <div className="relative">
                         <input
                             type="number"
+                            inputMode="numeric"
+                            pattern="[0-9]*"
                             value={minutes}
                             onChange={(e) => setMinutes(e.target.value)}
                             placeholder="0"
