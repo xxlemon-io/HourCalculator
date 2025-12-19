@@ -46,7 +46,7 @@ function App() {
         </div>
 
         <footer className="pt-8 text-center text-xs text-muted-foreground/50">
-          <p>Local Storage Enabled • Unit Definitions: 1h = 60m</p>
+          <p>built by xxlemon.io</p>
         </footer>
       </div>
     </div>
