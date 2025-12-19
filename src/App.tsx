@@ -46,7 +46,17 @@ function App() {
         </div>
 
         <footer className="pt-8 text-center text-xs text-muted-foreground/50">
-          <p>built by xxlemon.io</p>
+          <p>
+            built by{' '}
+            <a
+              href="https://github.com/xxlemon-io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors underline underline-offset-2"
+            >
+              xxlemon.io
+            </a>
+          </p>
         </footer>
       </div>
     </div>
