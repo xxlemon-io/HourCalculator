@@ -58,7 +58,7 @@ export const HistoryList = ({ history, onClear, onUndo }: HistoryListProps) => {
                             </div>
                             <button
                                 onClick={() => onUndo(item.id)}
-                                className="p-2 text-muted-foreground hover:text-primary hover:bg-background rounded-full transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
+                                className="p-2 text-muted-foreground hover:text-primary hover:bg-background rounded-full transition-all"
                                 title="Undo"
                             >
                                 <RotateCcw className="w-4 h-4" />
