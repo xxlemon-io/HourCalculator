@@ -24,7 +24,8 @@ function App() {
           <div className="absolute right-0 top-0">
             <ThemeToggle />
           </div>
-          <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl pt-2">
+          <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl pt-2 flex items-center justify-center gap-2">
+            <span className="text-4xl">⏱️</span>
             Hour Calculator
           </h1>
           <p className="text-muted-foreground text-sm">
